@@ -9,7 +9,7 @@ const {
 const router = express.Router();
 router.get("/list", getListPost);
 router.get("/:id", getPost);
-router.post("/create", createPost);
+router.post("/", createPost);
 router.patch("/:id", editPost);
 router.delete("/:id", deletePost);
 module.exports = router;
